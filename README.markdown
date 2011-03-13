@@ -5,7 +5,6 @@ Example of a script utilizing phantomjs & nodejs for the purposes of gaming the 
 
 I wanted a meatier example of phantomjs so that I could eventually replace our firefox-based selenium server with a simple phantomjs script for enterprise use.
 
-
 Instructions:
 ---------------
 
