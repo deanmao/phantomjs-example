@@ -8,24 +8,24 @@ I wanted a meatier example of phantomjs so that I could eventually replace our f
 Instructions:
 ---------------
 
-1. Build & Install phantomjs (instructions are for Debian)
+Build & Install phantomjs (instructions are for Debian)
 
     apt-get install libqt4-dev
     git clone git://github.com/ariya/phantomjs.git && cd phantomjs
     qmake && make
     cp bin/phantomjs /usr/bin
     
-2. Install nodejs via nvm:
+Install nodejs via nvm:
 
     git clone git://github.com/creationix/nvm.git ~/.nvm
     source ~/.nvm/nvm.sh
     nvm install v0.4.2
 
-3. Make a fake xserver display (phantomjs needs this)
+Make a fake xserver display (phantomjs needs this)
 
     nohup Xvfb :4 -screen -ac 640x480x16 &> /dev/null &
 
-3. Run gold_rush.js:
+Run gold_rush.js:
 
     export DISPLAY=:4
     node gold_rush.js
